@@ -20,3 +20,11 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+# this is a read-only copy of the Eve static data dump.  we use this for
+# all sorts of cool shit.
+eve_db:
+  adapter: sqlite3
+  database: db/tyr101-sqlite3-v1.db
+  pool: 5
+  timeout: 5000
